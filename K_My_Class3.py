@@ -1,3 +1,5 @@
+# Пример использования пользовательского класса
+
 from kivy. app import App
 from kivy.lang import Builder
 
