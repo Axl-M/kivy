@@ -11,7 +11,7 @@ from kivy.lang import Builder
 #         font_size: '25sp'
 #         markup: True
 #     Button:
-#         text: "Кнопка 2"
+#         text: "Кнопка Soglashenie_Imen"
 #         pos_hint: {'center_x':.5, 'center_y':.6}
 #         font_size: '25sp'
 #         markup: True
@@ -33,7 +33,7 @@ BoxLayout:
     MyButton:
         text: "Кнопка 1^"
     MyButton:
-        text: "Кнопка 2^"
+        text: "Кнопка Soglashenie_Imen^"
     MyButton:
         text: "Кнопка 3^"
 '''

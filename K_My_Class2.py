@@ -5,7 +5,7 @@ from kivy.uix.boxlayout import BoxLayout
 KV = '''
 MyBox: # контейнер (пользовательский класс)
     Button: # кнопка (класс Button)
-        text: "Кнопка 2" # свойство кнопки (надпись на кнопке)
+        text: "Кнопка Soglashenie_Imen" # свойство кнопки (надпись на кнопке)
 '''
 
 # пользовательский класс MyBox

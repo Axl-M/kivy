@@ -12,7 +12,7 @@ BoxLayout:
         on_press: lb1.text = bt1.text
     Button:
         id: bt2
-        text: "Кнопка 2"
+        text: "Кнопка Soglashenie_Imen"
         on_press: lb1.text = bt2.text
     Label:
         id: lb1
