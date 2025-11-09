@@ -4,7 +4,7 @@ from kivy.properties import (
     NumericProperty, ReferenceListProperty, ObjectProperty)
 from kivy.vector import Vector
 from kivy.clock import Clock
-from random import randint
+# from random import randint
 
 
 class PongPaddle(Widget):
@@ -38,9 +38,13 @@ class PongGame(Widget):
     player1 = ObjectProperty(None)
     player2 = ObjectProperty(None)
 
-    def serve_ball(self):
+    # def serve_ball(self):
+    #     self.ball.center = self.center
+    #     self.ball.velocity = Vector(4, 0).rotate(randint(0, 360))
+
+    def serve_ball(self, vel=(4, 0)):
         self.ball.center = self.center
-        self.ball.velocity = Vector(4, 0).rotate(randint(0, 360))
+        self.ball.velocity = vel
 
     def update(self, dt):
         # call ball.move and other stuff
@@ -82,6 +86,7 @@ class PongApp(App):
         Clock.schedule_interval(game.update, 1.0 / 60.0)
         return game
         # return PongGame()
+
 
 if __name__ == '__main__':
     PongApp().run()
